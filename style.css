@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#camera, #result{
+    height: 300px;
+    width: 350px;
+}

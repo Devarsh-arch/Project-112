@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Project 110</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="btn btn-warning" id="header_div">
+            <h3 id="header_h3">Hand Gestures Identifier</h3>
+            <span>&#128076;</span>
+            <span>&#128077;</span>
+            <span>&#128400;</span>
+            <span>&#128078;</span>
+        </div>
+        <div id="main_div">
+            <center>
+                <h3>Take A Selfie Of A Gesture To Know About Its Meaning.</h3>
+                <h4>The Website Is Trained For The Following Gestures :</h4>
+                <span>&#9995;</span>
+                <span>&#128076;</span>
+                <span>&#128077;</span>
+                <span>&#128078;</span>
+                <span>&#9996;</span>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Webcam View</label>
+                    <div id="camera"></div>
+                    <br>
+                    <br>
+                    <button onclick="takesnapshot();" class="btn btn-warning">Capture Image</button>
+                  </div>
+                  <br>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Prediction 1</label>
+                    <p id="prediction_para_1"></p>
+                    <label>Prediction 2</label>
+                    <p id="prediction_para_2"></p> 
+                    <br>
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-xs-12"></div>
+                      <label>Snapshot - </label>
+                    <div id="result"></div>
+                    <br><br>
+                    <button onclick="Check();" class="btn btn-success">Predict Emotion</button>
+            
+                  </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
